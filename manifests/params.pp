@@ -5,10 +5,10 @@
 # [Remember: No empty lines between comments and class definition]
 class kerberos::params (
 # Common values
-  $config_file               = '/etc/krb5.conf'
-  $default_realm             = 'LOCAL'
-  $krb4_config               = '/etc/krb.conf'
-  $krb4_realms               = '/etc/krb.realms'
+  $config_file               = '/etc/krb5.conf',
+  $default_realm             = 'LOCAL',
+  $krb4_config               = '/etc/krb.conf',
+  $krb4_realms               = '/etc/krb.realms',
   $krb5_keytab_realm         = 'LOCAL',
   $krb5_keytab_service_realm = 'LOCAL',
   $krb5_keytab_rsh_principal = "host/${::fqdn}@${krb5_keytab_realm}",
