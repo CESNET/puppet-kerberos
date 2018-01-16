@@ -22,7 +22,7 @@ class kerberos::params (
   $krb5_keytab_fqdn          = $::fqdn,
   $krb5_keytab_refresh       = false,
   $krb5_keytab_no_cache      = false,
-  $krb5_keytab_kerberos      = 'heimdal',
+  $krb5_keytab_kerberos      = 'mit',
 ) {
 
 # OS specific values
